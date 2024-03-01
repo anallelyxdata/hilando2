@@ -1,0 +1,149 @@
+.portada_pregunta{
+	background-image: url('../img/fondos/fondo_verde.png');
+	background-attachment: fixed;
+	background-size: 100%;
+	position: relative;
+	height: 200vh;
+	display: flex;
+	justify-content: center;
+	padding: 0 2rem;
+
+	/*border: solid white;*/
+
+}
+.portada_pregunta_texto{
+	/*border: solid white;*/
+	text-align: center;
+	height: 200vh;
+	display: flex;
+	align-items: flex-start;
+	padding-top: 15%;
+}
+.portada_pregunta_sticky{
+	position: sticky;
+	top: 25%;
+	/*border: solid;*/
+}
+.logos{
+	margin-bottom: 2rem;
+	width: 80%;
+	max-width: 250px;
+}
+.portada_pregunta_titulo{
+	color: var(--gris2);
+}
+.portada_pregunta_p{
+	font-family: FilsonProRegular;
+	text-transform: uppercase;
+	font-size: .7rem;
+	letter-spacing: 1px;
+	margin-top: 4rem;
+	color: var(--lima);
+	line-height: 2;
+}
+.gota1{
+	position: absolute;
+	left: 42%;
+	top: 110%;
+	width: 16%;
+	transform-origin: center;
+}
+.portada_pregunta_extra{
+	background-image: url('../img/fondos/fondo_lima.png');
+	background-size: 100%;
+	position: relative;
+	height: 100vh;
+}
+.aux_sale{
+	top: 20%;
+}
+.aux_gota{
+	top: 35%;
+}
+
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	.logos{
+		width: 60%;
+	}
+	.portada_pregunta_titulo{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.gota1{
+		position: absolute;
+		left: 45%;
+		top: 115%;
+		width: 10%;
+	}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.logos{
+		margin-bottom: 2rem;
+		width: 18rem;
+		max-width: unset;
+	}
+	.gota1{
+		position: absolute;
+		left: 47%;
+		top: 115%;
+		width: 6%;
+	}
+	.portada_pregunta{
+		height: 300vh;
+	}
+	.portada_pregunta_sticky{
+		position: sticky;
+		top: 25%;
+	}
+	.aux_sale{
+		top: 25%;
+	}
+	.aux_gota{
+		top: 55%;
+	}
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.logos{
+		margin-bottom: 4rem;
+		width: 23rem;
+	}
+	.gota1{
+		position: absolute;
+		left: 48%;
+		top: 120%;
+		width: 4%;
+	}
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.portada_pregunta_titulo{
+		width: 68%;
+	}
+	.gota1{
+		position: absolute;
+		left: 48.5%;
+		width: 3%;
+	}	
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+	
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1700px) {
+	
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 2000px) {
+	
+}

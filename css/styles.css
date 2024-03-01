@@ -1,0 +1,174 @@
+/* general styles */
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	:root {
+	  --lima: #cde35f;
+	  --naranja: #ca7650;
+	  --verde: #1f4a4f;
+	  --azul: #4646d6;
+	  --gris: #dbd7d4;
+	  --peach: #de7e57;
+	  --gris2: #ccc8c5;
+	  --grisObscuro: #333333;
+	}
+	a{
+		text-decoration: none;
+		color: unset;
+	}
+
+
+/* Fuentes */
+	@font-face {
+	  font-family: AcuminVariableBold;
+	  font-weight: bold;
+	  src: url('../fonts/AcuminVariableConcept.ttf');
+	}
+	@font-face {
+	  font-family: FilsonProBlack;
+	  src: url('../fonts/FilsonProBlack.otf');
+	}
+	@font-face {
+	  font-family: FilsonProBold;
+	  src: url('../fonts/FilsonProBold.otf');
+	}
+	@font-face {
+	  font-family: FilsonProRegular;
+	  src: url('../fonts/FilsonProRegular.otf');
+	}
+	@font-face {
+	  font-family: FilsonProMedium;
+	  src: url('../fonts/FilsonProMedium.otf');
+	}
+	@font-face {
+	  font-family: FilsonProBook;
+	  src: url('../fonts/FilsonProBook.otf');
+	}
+	html {
+	  /*scroll-behavior: smooth;*/
+	  font-size: 100%;
+		overflow-x: hidden;
+	}
+	body{
+	  	font-family: FilsonProRegular, sans-serif;
+		background-color: var(--verde);
+		/*background-image: url('../img/text9.png');*/
+	}
+
+/* Font size */
+
+	.fs-07{
+		font-size: .7rem;
+	}
+	.fs-09{
+		font-size: .9rem;
+	}
+	.fs-2{
+		font-size: 2rem;
+	}
+	.fs-2-5{
+		font-size: 3rem;
+	}
+	.fs-4{
+		font-size: 4rem;
+	}
+
+/* Aux */
+	.aux{
+		position: absolute;
+		width: 50px;
+		height: 100px;
+		background-color: violet;
+		left: 0;
+	}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	.fs-07{
+		font-size: .8rem;
+	}
+	.fs-09{
+		font-size: 1.1rem;
+	}
+	.fs-2{
+		font-size: 2.2rem;
+	}
+	.fs-2-5{
+		font-size: 3.2rem;
+	}
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.fs-07{
+		font-size: .85rem;
+	}
+	
+	.fs-2{
+		font-size: 2.6rem;
+	}
+	.fs-2-5{
+		font-size: 3.4rem;
+	}
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.fs-07{
+		font-size: .9rem;
+	}
+	.fs-2{
+		font-size: 3rem;
+	}
+	.fs-2-5{
+		font-size: 3.6rem;
+	}
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.fs-07{
+		font-size: .9rem;
+	}
+	.fs-09{
+		font-size: 1.4rem;
+	}
+	.fs-2{
+		font-size: 3.6rem;
+	}
+	.fs-2-5{
+		font-size: 3.8rem;
+	}
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+	.fs-07{
+		font-size: .9rem;
+	}
+	.fs-2{
+		font-size: 4rem;
+	}
+	.fs-2-5{
+		font-size: 4.2rem;
+	}
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1700px) {
+	.fs-07{
+		font-size: .9rem;
+	}
+	.fs-2{
+		font-size: 4.2rem;
+	}
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 2000px) {
+	
+}
+
