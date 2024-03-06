@@ -157,6 +157,7 @@
 	    bottom: 0;
 	    /*border:  solid blue;*/
 	    max-width: 100vw;
+	    overflow: hidden;
 	}
 	.portada_ropa_bn{
 		width: auto; /* Adjust width automatically */
@@ -189,15 +190,100 @@
 		z-index: 40;
 	}
 	.portada_escondida_tenis1{
-		width: 10%;
+		width: 11%;
 		bottom: 3%;
 		left: 5%;
 		transform: rotate(-36.5deg);
-
-	/*	bottom: -70%;
-		transform: rotate(-316deg);
-		left: -2%;*/
-
+	}
+	.portada_escondida_chamarra1{
+		width: 20%;
+		bottom: -10%;
+		left: 5%;
+		transform: rotate(-30deg);
+		z-index: -10;
+	}
+	.portada_escondida_lentes1{
+		width: 7%;
+		left: 16%;
+		bottom: 4%;
+		transform: rotate(-157.125deg);
+		z-index: 20;
+	}
+	.portada_escondida_tenis2{
+		width: 11%;
+		left: 21%;
+		bottom: 4%;
+		transform: rotate(-33.53deg);
+		z-index: 20;
+	}
+	.portada_escondida_jeans2{
+		width: 13%;
+		left: 26%;
+		bottom: 2%;
+		z-index: 20;
+		transform: rotate(-62.7deg);
+	}
+	.portada_escondida_chamarra2{
+		width: 19%;
+		left: 33.5%;
+		bottom: -10%;
+		z-index: -10;
+		transform: rotate(160deg);
+	}
+	.portada_escondida_lentes2{
+		width: 7%;
+		left: 43%;
+		bottom: 1%;
+		z-index: 20;
+		transform: rotate(-33.53deg);
+	}
+	.portada_escondida_jeans21{
+		width: 14%;
+		left: 53%;
+		bottom: -2.5%;
+		transform: rotate(-357.72deg);
+	}
+	.portada_escondida_ropa1{
+		width: 18%;
+		left: 60%;
+		bottom: 0%;
+		z-index: 20;
+		transform: rotate(-3.03deg);
+	}
+	.portada_escondida_tenis11{
+		width: 11%;
+		left: 68%;
+		bottom: 12%;
+		z-index: 23;
+		transform: rotate(-343.79deg);
+	}
+	.portada_escondida_chamarra3{
+		width: 19%;
+		left: 66%;
+		bottom: -18%;
+		z-index: -10;
+		transform: rotate(-112deg);
+	}
+	.portada_escondida_chamarra11{
+		width: 20%;
+		left: 73%;
+		bottom: -14%;
+		transform: rotate(-23.73deg);
+		z-index: -10;
+	}
+	.portada_escondida_pulsera{
+		width: 4.5%;
+		left: 13%;
+		bottom: 2%;
+		transform: rotate(20deg);
+		z-index: 20;
+	}
+	.portada_escondida_pulsera2{
+		width: 4.5%;
+		left: 64.3%;
+		bottom: 2%;
+		transform: rotate(20deg);
+		z-index: 45;
 	}
 
 /* verde */
@@ -216,16 +302,72 @@
 		font-family: sans-serif;
 		letter-spacing: 1px;
 		font-size: .8rem;
-		z-index: 100;
 	}
-	.portada_bloqueAzul_icons{
+	.mouse{
 		 animation: mover .8s infinite  alternate;
-		 width: 2.5rem;
+		 width: 1rem;
 	}
-	.portada_bloqueAzul div{
+	.portada_bloqueAzul .scroll{
+		/*border: solid;*/
 		display: flex;
-		column-gap: .8rem;
-	  	font-family: FilsonProRegular;
+		column-gap: .6rem;
+	  	align-items: center;
+	  	justify-content: center;
+	  	align-content: center;
+	  	margin-right: 1.5rem;
+	}
+	.desliza{
+	  	font-family: 'FilsonProRegular';
+		letter-spacing: 2px;
+	}
+	.m_scroll_arrows
+	{
+	  display: block;
+	  transform: rotate(45deg);
+	   
+	  border-right: 4px solid white;
+	  border-bottom: 4px solid white;
+	  margin: 0 0 3px 4px;
+	  
+	  width: 12px;
+	  height: 12px;
+	}
+
+
+	.unu
+	{
+	  margin-top: 0px;
+	}
+
+	.unu, .doi, .trei
+	{
+	    animation: mouse-scroll 1s infinite;
+	  
+	}
+
+	.unu
+	{
+	  
+	  animation-direction: alternate;
+	  animation-delay: alternate;
+	}
+
+	.doi
+	{
+	  animation-delay: .2s;
+	  animation-direction: alternate;
+	  
+	  margin-top: -6px;
+	}
+
+	.trei
+	{
+	  
+	  animation-delay: .3s;
+	  animation-direction: alternate;
+	  
+	  
+	  margin-top: -6px;
 	}
 
 

@@ -151,8 +151,8 @@
   }
 }
 @keyframes mover {
-    0% { transform: translateY(0px); }
-    100% { transform: translateY(-8px); }
+    0% { transform: translateY(2px); }
+    100% { transform: translateY(-5px); }
 }
 
 @keyframes swing {
@@ -238,4 +238,29 @@
     transform: scale(1);
     transform-origin: center center;
   }
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
 }

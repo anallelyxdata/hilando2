@@ -15,15 +15,158 @@ const portada = gsap.timeline({
       },
   },
 });
+portada.to('.portada_ropa', {
+  overflow:'visible'
+},);
 portada.to('.portada_escondida_tenis1', {
   y:500,
   x:-100,
   rotate:44, 
-});
+},'<');
+portada.to('.portada_escondida_chamarra1', {
+  y:500,
+  x:-5,
+  rotate:5,
+},'<');
+portada.to('.portada_escondida_lentes1', {
+  y:350,
+  x:-5,
+  rotate:120,
+},'<');
+portada.to('.portada_escondida_tenis2', {
+  y:350,
+  x:5,
+  rotate:40,
+},'<');
+portada.to('.portada_escondida_jeans2', {
+  y:480,
+  x:-60,
+  rotate:-150,
+},'<');
+portada.to('.portada_escondida_chamarra2', {
+  y:350,
+  x:-60,
+  rotate:170,
+},'<');
+portada.to('.portada_escondida_lentes2', {
+  y:400,
+  x:-60,
+  rotate:60,
+},'<');
+portada.to('.portada_escondida_jeans21', {
+  y:300,
+  x:-60,
+  rotate:160,
+},'<');
+portada.to('.portada_escondida_ropa1', {
+  y:350,
+  x:-230,
+  rotate:60,
+},'<');
+portada.to('.portada_escondida_tenis11', {
+  y:400,
+  x:-70,
+  rotate:-30,
+},'<');
+portada.to('.portada_escondida_chamarra3', {
+  y:420,
+  x:-30,
+  rotate:170,
+},'<');
+portada.to('.portada_escondida_chamarra11', {
+  y:300,
+  x:-30,
+  rotate:50,
+},'<');
+portada.to('.portada_escondida_pulsera', {
+  y:300,
+  x:600,
+  rotate:50,
+},'<');
+portada.to('.portada_escondida_pulsera2', {
+  y:450,
+  x:300,
+  rotate:80,
+},'<');
+
+
 portada.to('.portada_escondida_tenis1', {
-  y:2000,
-  x:-800,
+  y:2500,
+  x:-280,
   rotate:210,
+});
+portada.to('.portada_escondida_chamarra1', {
+  y:2500,
+  x:-150,
+  rotate:200,
+},'<');
+portada.to('.portada_escondida_lentes1', {
+  y:2500,
+  x:-220,
+  rotate:120,
+},'<');
+portada.to('.portada_escondida_tenis2', {
+  y:2500,
+  x:-185,
+  rotate:40,
+},'<');
+portada.to('.portada_escondida_jeans2', {
+  y:2500,
+  x:-260,
+  rotate:-150,
+},'<');
+portada.to('.portada_escondida_chamarra2', {
+  y:2500,
+  x:360,
+  rotate:170,
+},'<');
+portada.to('.portada_escondida_lentes2', {
+  y:2500,
+  x:-560,
+  rotate:60,
+},'<');
+portada.to('.portada_escondida_jeans21', {
+  y:2500,
+  x:-160,
+  rotate:160,
+},'<');
+portada.to('.portada_escondida_ropa1', {
+  y:2500,
+  x:-330,
+  rotate:60,
+},'<');
+portada.to('.portada_escondida_tenis11', {
+  y:2500,
+  x:-170,
+  rotate:-30,
+},'<');
+portada.to('.portada_escondida_chamarra3', {
+  y:2500,
+  x:-230,
+  rotate:170,
+},'<');
+portada.to('.portada_escondida_chamarra11', {
+  y:2500,
+  x:-330,
+  rotate:50,
+},'<');
+portada.to('.portada_escondida_pulsera', {
+  y:2500,
+  x:600,
+  rotate:50,
+},'<');
+portada.to('.portada_escondida_pulsera2', {
+  y:2500,
+  x:300,
+  rotate:80,
+},'<');
+
+
+
+
+
+portada.to('.portada_escondida', {
+  opacity:0
 });
 portada.to('.gota1', {
   scale:50
@@ -35,6 +178,7 @@ portada.to('.portada_pregunta', {
 portada.to('.gota1, .portada_pregunta_sticky', {
   display:'none'
 });
+
 
 
 // const sale = gsap.timeline({

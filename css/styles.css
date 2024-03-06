@@ -18,6 +18,9 @@
 		text-decoration: none;
 		color: unset;
 	}
+	body.overlay-open {
+            overflow: hidden;
+        }
 
 
 /* Fuentes */
@@ -50,11 +53,14 @@
 	  /*scroll-behavior: smooth;*/
 	  font-size: 100%;
 		overflow-x: hidden;
+		/*max-width: 100vw;*/
 	}
 	body{
 	  	font-family: FilsonProRegular, sans-serif;
 		background-color: var(--verde);
 		/*background-image: url('../img/text9.png');*/
+		/*max-width: 100vw;*/
+		/*overflow-x: hidden;*/
 	}
 
 /* Font size */
@@ -62,11 +68,20 @@
 	.fs-07{
 		font-size: .7rem;
 	}
+	.fs-08{
+		font-size: .8rem;
+	}
 	.fs-09{
 		font-size: .9rem;
 	}
+	.fs-2-3{
+		font-size: 2rem;
+	}
 	.fs-2{
 		font-size: 2rem;
+	}
+	.fs-1-8{
+		font-size: 1.8rem;
 	}
 	.fs-2-5{
 		font-size: 3rem;
@@ -84,13 +99,189 @@
 		left: 0;
 	}
 
+/* Botones */
+	.portada_pregunta-botones{
+		display: flex;
+		position: fixed;
+		z-index: 100;
+		top: 1rem;
+		padding: 0 2rem;
+		width: 100%;
+		justify-content: space-between;
+		font-family: FilsonProMedium, sans-serif;
+		opacity: 1;
+		transition: all 1s ease;
+	}
+	.btn-main{
+		background-color: rgba(255, 255, 255, .1);
+		border-radius: 2rem;
+		/*width: 9rem;*/
+		text-align: center;
+		font-size: .9rem;
+		height: 1rem;
+		width: max-content;
+		padding: 6px 18px;
+		box-sizing: content-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		font-size: .8rem;
+		color: #fff;
+		font-family: FilsonProRegular, sans-serif;
+		transition: all .5s ease;
+		border: none;
+	}
+	.btn-main img{
+		height: 100%;
+		filter: invert(0%);
+		transition: all .5s ease;
+
+	}
+	/*.portada_btn-xdata{
+		transition: all .2s ease;
+	}*/
+	.portada_btn-xdata img{
+		/*filter: invert(80%);*/
+		height: 1.5rem;
+		transition: all .5s ease;
+
+	}
+	.btn-main:hover{
+		background-color: var(--verde);
+	}
+	.portada_btn-xdata img:hover{
+		height: 1.6rem;
+		transform-origin: center;
+	}
+
+/* pop up */
+	.overlay {
+		/* Height & width depends on how you want to reveal the overlay (see JS below) */   
+		height: 100%;
+		width: 0;
+		position: fixed; /* Stay in place */
+		z-index: 1000; /* Sit on top */
+		left: 0;
+		top: 0;
+		background-color: var(--verde);
+		background-image: url('../img/fondos/fondo_verde.png');
+		background-attachment: fixed;
+		background-size: 100%;
+		overflow-x: hidden; /* Disable horizontal scroll */
+		transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	}
+
+	/* Position the content inside the overlay */
+	.overlay-content {
+		min-height: 100vh;
+		max-width: 100vw;
+		position: relative;
+		width: 100%; /* 100% width */
+		padding: 2rem 5%;
+		color: 	#fff;
+		text-align: left;
+	}
+
+	/* Position the close button (top right corner) */
+	.overlay .closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 40px;
+		font-weight: lighter;
+		z-index: 1500;
+		color: #fff;
+	}
+
+	.overlay_logo{
+		display: block;
+		width: 25%;
+		margin: 0 auto;
+		margin-bottom: 1rem;
+		max-width: 150px;
+	}
+	.overlay-content h2{
+		color: var(--lima);
+		margin-bottom: .8rem;
+	}
+	.overlay_texto{
+		line-height: 1.4;
+		margin-bottom: 5%;
+	}
+	.overlay_btn{
+		text-transform: uppercase;
+		padding: 6px 12px;
+		border-radius: 2rem;
+		background-color: rgba(191, 213, 95, .21);
+		transition: all .3s ease;
+	}
+	.overlay_btn:hover{
+		background-color: var(--lima);
+		color: var(--verde);
+	}
+	.overlay_equipo_div{
+		margin-top: 7%;
+	}
+	.overlay_equipo{
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	.overlay_linea{
+		width: 	100%;
+		border: 2px dashed var(--lima);
+		margin: .5rem 0 1rem;
+	}
+	.overlay_grid{
+		display: flex;
+		flex-direction: column;
+		grid-row-gap: .6rem;
+	}
+	.overlay_grid div{
+		/*border: solid;*/
+	}
+	.overlay_redes{
+		display: flex;
+		column-gap: 1rem;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+	.overlay_redes a{
+		display: block;
+		border: solid 1px var(--lima);
+		border-radius: 50%;
+		height: 35px;
+		width: 35px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+	@media screen and (max-height: 450px) {
+	  .overlay a {font-size: 20px}
+	  .overlay .closebtn {
+	    font-size: 40px;
+	    top: 15px;
+	    right: 35px;
+	  }
+	}
+
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 	.fs-07{
 		font-size: .8rem;
 	}
+	.fs-08{
+		font-size: .9rem;
+	}
 	.fs-09{
 		font-size: 1.1rem;
+	}
+	.fs-2-3{
+		font-size: 2.2rem;
 	}
 	.fs-2{
 		font-size: 2.2rem;
@@ -98,7 +289,14 @@
 	.fs-2-5{
 		font-size: 3.2rem;
 	}
-
+	/* Position the content inside the overlay */
+	.overlay-content {
+		padding: 5% 10%;
+	}
+	.overlay_logo{
+		margin-bottom: 1.5rem;
+	}
+	
 }
 
 /*// Medium devices (tablets, 768px and up)*/
@@ -106,12 +304,24 @@
 	.fs-07{
 		font-size: .85rem;
 	}
-	
+	.fs-08{
+		font-size: 1rem;
+	}
+	.fs-2-3{
+		font-size: 2.6rem;
+	}
 	.fs-2{
 		font-size: 2.6rem;
 	}
 	.fs-2-5{
 		font-size: 3.4rem;
+	}
+	.overlay-content {
+		padding: 5% 10%;
+	}
+	.overlay_logo{
+		margin: 0;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -120,11 +330,66 @@
 	.fs-07{
 		font-size: .9rem;
 	}
+	.fs-2-3{
+		font-size: 3rem;
+	}
 	.fs-2{
 		font-size: 3rem;
 	}
 	.fs-2-5{
 		font-size: 3.6rem;
+	}
+	.overlay-content {
+		padding: 5% 8%;
+		border: solid;
+		opacity: 0;
+	}
+	.overlay_grid{
+		display: inline-grid;
+		grid-template-columns: 30% 40% 30%;
+		grid-template-rows: repeat(3,max-content);
+		grid-row-gap: 2rem;
+		margin-top: 2rem;
+		width: 80%;
+		/*grid-column-gap: 5%;*/
+	}
+	.overlay_redes{
+		display: flex;
+		column-gap: 1rem;
+		margin-top: 0;
+		margin-bottom: 1rem;
+	}
+	.overlay_redes a{
+		height: 40px;
+		width: 40px;
+		transition: all .5s ease;
+	}
+	.overlay_redes a:hover{
+		transform: translateY(-5px);
+	}
+
+	.overlay_grid div{
+		position: relative;
+		align-self: start;
+		width: max-content;
+	}
+	.overlay_grid div p:nth-child(1){
+		margin-bottom: 4px;
+	}
+	.item-creativa{
+		grid-column-start: 1;
+	}
+	.fs-1-8{
+		font-size: 2rem;
+	}
+	.overlay_texto{
+		width: 60%;
+	}
+	.overlay_btn{
+		text-transform: uppercase;
+		padding: .6rem 1.5rem;
+		border-radius: 2rem;
+		background-color: rgba(191, 213, 95, .21);
 	}
 }
 
@@ -133,14 +398,26 @@
 	.fs-07{
 		font-size: .9rem;
 	}
+	.fs-08{
+		font-size: 1rem;
+	}
 	.fs-09{
 		font-size: 1.4rem;
+	}
+	.fs-2-3{
+		font-size: 3rem;
 	}
 	.fs-2{
 		font-size: 3.6rem;
 	}
 	.fs-2-5{
 		font-size: 3.8rem;
+	}
+	.fs-1-8{
+		font-size: 2.3rem;
+	}
+	.overlay_texto{
+		width: 46%;
 	}
 }
 
