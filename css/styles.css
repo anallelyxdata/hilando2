@@ -8,6 +8,7 @@
 	  --lima: #cde35f;
 	  --naranja: #ca7650;
 	  --verde: #1f4a4f;
+	  --verdeDark: #1b3339;
 	  --azul: #4646d6;
 	  --gris: #dbd7d4;
 	  --peach: #de7e57;
@@ -35,6 +36,10 @@
 	}
 	@font-face {
 	  font-family: FilsonProBold;
+	  src: url('../fonts/FilsonProBold.otf');
+	}
+	@font-face {
+	  font-family: FilsonPro-Bold;
 	  src: url('../fonts/FilsonProBold.otf');
 	}
 	@font-face {

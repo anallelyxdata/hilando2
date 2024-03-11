@@ -8,6 +8,7 @@ const portada = gsap.timeline({
     end: 'bottom top',      
     scrub: 1,    
     markers: false, 
+    pinSpacing:false,
     pinSpacer: false,
     snap: {
         duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)

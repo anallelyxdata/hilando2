@@ -4,7 +4,7 @@
 	background-color: var(--lima);
 	/*background-color: lightblue;*/
 	position: relative;
-	border:  5px solid pink !important;
+	/*border:  5px solid pink !important;*/
 }
 /* sec 1 */
 	.intro1{
@@ -13,7 +13,7 @@
 		/*transition: bacground 3s ease;*/
 		background-repeat: no-repeat;
 		background-size: 100%;
-		border: solid blue;
+		/*border: solid blue;*/
 	}
 	.intro1_planeta{
 		height: 100vh;
@@ -85,7 +85,7 @@
 		background-color: transparent;
 		height: 300vh;
 		position: relative;
-		border: solid orange;
+		/*border: solid orange;*/
 		opacity: 0;
 		/*top: 400vh;*/
 		width: 100%;
@@ -193,7 +193,7 @@
 		width: 100%;
 		display: flex;
 		justify-content: center;
-		border: solid greenyellow;
+		/*border: solid greenyellow;*/
 		background-color: var(--azul);
 	}
 	.intro3_planeta{
@@ -287,7 +287,7 @@
 		/*opacity: 0;*/
 		width: 100vw;
 		/*top: 830vh;*/
-		border: solid purple;
+		/*border: solid purple;*/
 	}
 	.intro4_planeta{
 		height: 100vh;
@@ -349,8 +349,7 @@
 
 /* Sec 5 */
 	.intro5{
-		height: 105vh;
-		/*opacity: 0;*/
+		height: 100vh;
 		width: 100vw;
 		background:  url('../img/intro/fondo_negro63.png'), url('../img/intro/fondo_pared.svg');
 		background-size: cover;
@@ -358,7 +357,7 @@
 		/*border: solid red;*/
 		position: relative;
 		/*opacity: 0;*/
-		border:  5px solid red;
+		/*border:  5px solid red;*/
 	}
 	.intro5_planeta{
 		height: 100vh;
