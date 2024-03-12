@@ -84,7 +84,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector('.ciclo_texto_p').innerText = 'Para realmente comprender el impacto ambiental y social que tiene cada prenda, hemos analizado cada etapa de su ciclo de vida.';
 
         document.querySelectorAll('.g_etapa text').forEach((element) => {
-            element.style.opacity = '.63';
+            element.style.opacity = '.43';
+            element.style.fontFamily='FilsonProRegular'
         });
 
         document.querySelector('.btn-main img').style.filter = 'invert(0%)';
@@ -95,11 +96,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
     else if (isElementVisible(ciclo_aux_fibra)) {
         section_ciclo.style.backgroundImage = 'url(./img/fondos/fondo_verde.png)';
         document.querySelectorAll('.g_etapa text').forEach((element) => {
-            element.style.opacity = '.63';
+            element.style.opacity = '.43';
+            element.style.fontFamily='FilsonProRegular'
+
         });
         document.querySelectorAll('.g_produccion .cls-2').forEach((element) => {
             element.style.opacity = '1';
-            element.style.fontWeight='700'
+            element.style.fontFamily='FilsonProBlack'
         });
         document.querySelectorAll('#imagek0,#imagek1,#imagek2, #imagek3, #imagek4, #imagek5, #imagek6').forEach((element) => {
           element.style.backgroundImage = 'url(./img/ciclo/fibra.png)';
@@ -180,11 +183,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     } else if (isElementVisible(ciclo_aux_dis)){
         section_ciclo.style.backgroundImage = 'url(./img/fondos/textura-azul.png)';
         document.querySelectorAll('.g_etapa text').forEach((element) => {
-            element.style.opacity = '.63';
+            element.style.opacity = '.43';
+            element.style.fontFamily='FilsonProRegular'
         });
         document.querySelectorAll('.g_dis .cls-4').forEach((element) => {
             element.style.opacity = '1';
-            element.style.fontWeight='700'
+            element.style.fontFamily='FilsonProBlack'
         });
         document.querySelectorAll('#imagek0,#imagek1,#imagek2, #imagek3, #imagek4, #imagek5, #imagek6').forEach((element) => {
           element.style.backgroundImage = 'url(./img/ciclo/diseño.png)';
@@ -253,11 +257,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     else if (isElementVisible(ciclo_aux_manufactura)){
         section_ciclo.style.backgroundImage = 'url(./img/fondos/fondo_lima.png)';
         document.querySelectorAll('.g_etapa text').forEach((element) => {
-            element.style.opacity = '.63';
+            element.style.opacity = '.43';
+            element.style.fontFamily='FilsonProRegular'
         });
         document.querySelectorAll('.g_manufactura .cls-4').forEach((element) => {
             element.style.opacity = '1';
-            element.style.fontWeight='700'
+            element.style.fontFamily='FilsonProBlack'
         });
         document.querySelectorAll('#imagek0,#imagek1,#imagek2, #imagek3, #imagek4, #imagek5, #imagek6').forEach((element) => {
           element.style.backgroundImage = 'url(./img/ciclo/manufactura.png)';
@@ -324,11 +329,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     else if (isElementVisible(ciclo_aux_logistica)){
         section_ciclo.style.backgroundImage = 'url(./img/fondos/textura_gris.png)';
         document.querySelectorAll('.g_etapa text').forEach((element) => {
-            element.style.opacity = '.63';
+            element.style.opacity = '.43';
+            element.style.fontFamily='FilsonProRegular'
         });
         document.querySelectorAll('.g_logistica .cls-4').forEach((element) => {
             element.style.opacity = '1';
-            element.style.fontWeight='700'
+            element.style.fontFamily='FilsonProBlack'
         });
         document.querySelectorAll('#imagek0,#imagek1,#imagek2, #imagek3, #imagek4, #imagek5, #imagek6').forEach((element) => {
           element.style.backgroundImage = 'url(./img/ciclo/logistica.png)';
@@ -350,7 +356,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector(".circulo_grande2").style.borderLeftColor = "transparent";
 
         document.querySelector(".k_circle_1").style.borderColor = "#9d9ccb";
-        document.querySelector(".k_circle_1").style.backgroundColor = "#6364d5";
+        document.querySelector(".k_circle_1").style.backgroundColor = ".4364d5";
 
         document.querySelector(".ciclo_circulo").src = "./img/ciclo/ciclo_de_vida_azul_rey.png";
         document.querySelector(".ciclo_texto").style.color="#000";
@@ -396,11 +402,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     else if (isElementVisible(ciclo_aux_uso)){
         section_ciclo.style.backgroundImage = 'url(./img/fondos/textura_naranja.png)';
         document.querySelectorAll('.g_etapa text').forEach((element) => {
-            element.style.opacity = '.63';
+            element.style.opacity = '.43';
+            element.style.fontFamily='FilsonProRegular'
         });
         document.querySelectorAll('.g_uso .cls-4').forEach((element) => {
             element.style.opacity = '1';
-            element.style.fontWeight='700'
+            element.style.fontFamily='FilsonProBlack'
         });
         document.querySelectorAll('#imagek0,#imagek1,#imagek2, #imagek3, #imagek4, #imagek5, #imagek6').forEach((element) => {
           element.style.backgroundImage = 'url(./img/ciclo/uso.png)';
@@ -465,11 +472,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     else if (isElementVisible(ciclo_aux_nuevavida)){
         section_ciclo.style.backgroundImage = 'url(./img/fondos/textura_azulDos.png)';
         document.querySelectorAll('.g_etapa text').forEach((element) => {
-            element.style.opacity = '.63';
+            element.style.opacity = '.43';
+            element.style.fontFamily='FilsonProRegular'
         });
         document.querySelectorAll('.g_nueva .cls-4').forEach((element) => {
             element.style.opacity = '1';
-            element.style.fontWeight='700'
+            element.style.fontFamily='FilsonProBlack'
         });
         document.querySelectorAll('#imagek0,#imagek1,#imagek2, #imagek3, #imagek4, #imagek5, #imagek6').forEach((element) => {
           element.style.backgroundImage = 'url(./img/ciclo/nueva_vida.png)';

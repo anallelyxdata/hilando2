@@ -30,55 +30,23 @@
 		position: absolute;
 	}
 	.intro1_planeta_arriba{
-		width: 57%;
-		left: 17.5%;
-		bottom: 53%;
+		width: 58%;
+		left: 17.2%;
+		bottom: 53.5%;
 		transform-origin: bottom left;
 		transform: rotate(25deg);
 		z-index: 200;
-	}
-	.ovalo1{
-		position: absolute;
-		width:64%;
-		bottom: 51.5%;
-		left: 18%;
-		z-index: 5;
-	}
-	.ovalo_blanco{
-		position: absolute;
-		width:62.5%;
-		bottom: 51.5%;
-		left: 18.5%;
-		z-index: 4;
-	}
-	.ovalo2{
-		position: absolute;
-		transform: rotate(25deg);
-		z-index: 5;
-		width:60%;
-		bottom: 35%;
-		left: 18%;
-
-		/*bottom: 48%;
-		left: 17%;*/
-		/*transform: rotate(-6deg);*/
 	}
 	.intro1_planeta_abajo{
 		width: 75%;
 		left: 12.5%;
 		bottom: 10%;
-		/*background-color: var(--lima);*/
-		/*border: solid;*/
-		border-bottom-right-radius: 50%;
-		border-bottom-left-radius: 50%;
-		z-index: 20;
 	}
 	.intro1_planeta_ballena{
 		width: 42%;
 		top: 45%;
 		left: 30%;
-		z-index: 10;
-		/*opacity: 0;*/
+		z-index: -10;
 	}
 	.intro1_planeta_nuestro{
 		width: 80%;
@@ -218,7 +186,7 @@
 
 /* sec 3 */
 	.intro3{
-		height: 500vh;
+		height: 400vh;
 		position: relative;
 		opacity: 0;
 		/*top: 600vh;*/
@@ -242,7 +210,6 @@
 		top: 80%;
 		left: 31.5%;
 	}
-
 	.intro3_gota1{
 		position: absolute;
 		top: 10%;
@@ -266,30 +233,6 @@
 		transform: rotate(14deg);
 		transform-origin: top right;
 		z-index: 10;
-	}
-	.oval_verde{
-		position: absolute;
-		width: 22.5%;
-		height: 1.4%;
-		border-radius: 50%;
-		background-color: var(--lima);
-		top: 76.6%;
-		left: 30%;
-		transform: rotate(-12deg);
-		z-index: 12;
-
-		background-image: linear-gradient(to right, var(--lima) 50%, white 50%);
-		background-size: 200% 100%;
-		background-position: left bottom;
-
-		transition: background 2s ease;
-
-		/*animation: emptyBackground 3s forwards 1; /* Adjust time as needed */*/
-	}
-	@keyframes emptyBackground {
-		to {
-			background-position: right bottom;
-		}
 	}
 	.intro3_texto{
 		width: 35%;
@@ -339,21 +282,18 @@
 /* sec 4 */
 	.intro4{
 		background-color: var(--lima);
-		height: 300vh;
+		height: 100vh;
 		position: relative;
 		/*opacity: 0;*/
 		width: 100vw;
 		/*top: 830vh;*/
 		/*border: solid purple;*/
-		opacity: 0;
 	}
 	.intro4_planeta{
 		height: 100vh;
 		width: 100vw;
 		position: absolute;
 		top: 0;
-		border: solid blue;
-		/*background-color: var(--lima);*/
 		/*transform: scale(.7);*/
 		/*background-color: lightblue;*/
 	}
@@ -409,14 +349,13 @@
 
 /* Sec 5 */
 	.intro5{
-		height: 200vh;
+		height: 100vh;
 		width: 100vw;
 		background:  url('../img/intro/fondo_negro63.png'), url('../img/intro/fondo_pared.svg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		/*border: solid red;*/
 		position: relative;
-		top: 100vh;
 		/*opacity: 0;*/
 		/*border:  5px solid red;*/
 	}
