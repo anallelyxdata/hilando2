@@ -135,6 +135,7 @@
 	.intro2_planeta img{
 		position: absolute;
 	}
+	
 	.intro2_planeta_mitad{
 		width: 72%;
 		top: 35%;
@@ -149,6 +150,22 @@
 		transform-origin: top left;
 		z-index: 50;
 		/*border: solid;*/
+	}
+	.oval_azul{
+		position: absolute;
+		width: 38.5%;
+		height: 1.5%;
+		border-radius: 50%;
+		background-color: var(--azul);
+		z-index: 55;
+		top: 75%;
+		left: 30%;
+		background-image: linear-gradient(to left, var(--azul) 50%, white 50%);
+		background-size: 200% 100%;
+		background-position: right bottom;
+		transition: background 2s ease;
+
+		
 	}
 	.intro2_planeta_gota{
 		width: 0%;
@@ -273,18 +290,13 @@
 		height: 1.4%;
 		border-radius: 50%;
 		background-color: var(--lima);
-		top: 76.6%;
-		left: 30%;
-		transform: rotate(-12deg);
-		z-index: 12;
-
+		z-index: 5;
+		top: 69.5%;
+		left: 38%;
 		background-image: linear-gradient(to right, var(--lima) 50%, white 50%);
 		background-size: 200% 100%;
 		background-position: left bottom;
-
 		transition: background 2s ease;
-
-		/*animation: emptyBackground 3s forwards 1; /* Adjust time as needed */*/
 	}
 	@keyframes emptyBackground {
 		to {

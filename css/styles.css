@@ -27,7 +27,6 @@
 /* Fuentes */
 	@font-face {
 	  font-family: AcuminVariableBold;
-	  font-weight: bold;
 	  src: url('../fonts/AcuminVariableConcept.ttf');
 	}
 	@font-face {
@@ -77,6 +76,9 @@
 		font-size: .8rem;
 	}
 	.fs-09{
+		font-size: .9rem;
+	}
+	.fs-09T{
 		font-size: .9rem;
 	}
 	.fs-2-3{
@@ -285,6 +287,9 @@
 	.fs-09{
 		font-size: 1.1rem;
 	}
+	.fs-09T{
+		font-size: .9rem;
+	}
 	.fs-2-3{
 		font-size: 2.2rem;
 	}
@@ -310,6 +315,9 @@
 		font-size: .85rem;
 	}
 	.fs-08{
+		font-size: 1rem;
+	}
+	.fs-09T{
 		font-size: 1rem;
 	}
 	.fs-2-3{
@@ -408,6 +416,9 @@
 	}
 	.fs-09{
 		font-size: 1.4rem;
+	}
+	.fs-09T{
+		font-size: 1.1rem;
 	}
 	.fs-2-3{
 		font-size: 3rem;

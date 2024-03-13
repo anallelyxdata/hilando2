@@ -31,6 +31,7 @@
 }
 .portada_pregunta_titulo{
 	color: var(--gris2);
+	font-family: FilsonProBold, sans-serif;
 }
 .portada_pregunta_p{
 	font-family: FilsonProRegular;

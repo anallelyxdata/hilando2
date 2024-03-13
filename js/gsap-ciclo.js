@@ -7,9 +7,9 @@ const ciclofibra = gsap.timeline({
     start: 'top top', 
     end:'bottom bottom',
     scrub: true,    
-    markers: true, 
+    markers: false, 
     pin:'.section_ciclo_sticky',
-    pinSpacing:false,
+    pinSpacing:true,
   },
 });
 ciclofibra.to('.portada_btn-xdata', {

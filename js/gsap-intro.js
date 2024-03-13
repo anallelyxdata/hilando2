@@ -197,6 +197,12 @@ const intro2 = gsap.timeline({
       transform:'rotate(10deg)',
     duration: totalScrollDuration2 * 0.1
   });
+  intro2.to('.oval_azul', {
+    top:'80.5%',
+    left:'29%',
+    transform:'rotate(19.5deg)',
+    duration: totalScrollDuration2 * 0.1
+  },'<');
   intro2.to('.intro2_planeta_gota', {
       top:'86%',
       duration: totalScrollDuration2 * 0.1
@@ -207,6 +213,10 @@ const intro2 = gsap.timeline({
       opacity:1,
       duration: totalScrollDuration2 * 0.1
   });
+   intro2.to('.oval_azul', {
+      backgroundPosition:'left bottom',
+      duration: totalScrollDuration2 * 0.1
+    });
   intro2.to('.intro2_planeta_gota', {
       top:'88%',
       left:'65.7%',
@@ -220,6 +230,10 @@ const intro2 = gsap.timeline({
   intro2.to('.intro2_planeta_abajo', {
       top:'44.8%',
       duration: totalScrollDuration2 * 0.1
+  },'<');
+  intro2.to('.oval_azul', {
+    top:'50.5%',
+    duration: totalScrollDuration2 * 0.1
   },'<');
   intro2.to('.intro2_texto1', {
       top:'20%',
@@ -246,6 +260,10 @@ const intro2 = gsap.timeline({
   intro2.to('.intro2_planeta_abajo', {
       top:'-35.2%',
       duration: totalScrollDuration2 * 0.1
+  },'<');
+  intro2.to('.oval_azul', {
+    top:'-30%',
+    duration: totalScrollDuration2 * 0.1
   },'<');
   intro2.to('.intro2_texto1', {
       top:'-60%',
@@ -292,7 +310,7 @@ const intro3 = gsap.timeline({
     trigger: '.intro3',  
     start: 'top top',  
     scrub: 2,    
-    markers: true, 
+    markers: false, 
     pin:'.intro3_planeta',
     // pinSpacing:false,
   },
@@ -319,12 +337,17 @@ const intro3 = gsap.timeline({
     left:'31.5%',
     duration: totalScrollDuration3 * 0.1
   },'<');
+  intro3.to('.oval_verde', {
+    rotate:'12deg',
+    top:'73%',
+    left:'33%',
+    duration: totalScrollDuration3 * 0.1
+  },'<');
   intro3.to('.intro3_texto3', {
     top:'58%',
     left:'15%',
     duration: totalScrollDuration3 * 0.1
   },'<');
-
 
   intro3.to('.intro3_texto2', {
     opacity:1,
@@ -338,9 +361,15 @@ const intro3 = gsap.timeline({
     left:'30%',
     duration: totalScrollDuration3 * 0.1
   });
+   intro3.to('.oval_verde', {
+    rotate:'-12deg',
+    top:'76.7%',
+    left:'30%',
+    duration: totalScrollDuration3 * 0.1
+  },'<');
   intro3.to('.intro3_texto3', {
     visibility:'visible',
-    top:'75%',
+    top:'76.6%',
     left:'-26%',
     duration: totalScrollDuration3 * 0.1
   });
@@ -378,6 +407,12 @@ const intro3 = gsap.timeline({
   },'<');
   intro3.to('.intro3_texto3', {
     top:'45%',
+    duration: totalScrollDuration3 * 0.1
+  },'<');
+  intro3.to('.oval_verde', {
+    rotate:'-12deg',
+    top:'47%',
+    left:'30%',
     duration: totalScrollDuration3 * 0.1
   },'<');
   intro3.to('.intro3_gotaverde', {
@@ -444,7 +479,7 @@ const intro4 = gsap.timeline({
     start: 'top top', 
     end: 'bottom top',
     scrub: 2,    
-    markers: true, 
+    markers: false, 
     pin:true,
     pinSpacing:false,
   },
@@ -493,7 +528,7 @@ const intro5 = gsap.timeline({
     trigger: '.intro5',  
     start: 'top top',  
     scrub: 2,    
-    // markers: true, 
+    markers: false, 
     pin:true,
   },
 });

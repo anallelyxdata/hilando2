@@ -25,12 +25,12 @@
 	max-width: 800px;
 }
 .portada_h1{
-	font-family: AcuminVariableBold, sans-serif;
 	font-weight: bold;
 	font-size: 1rem;
 	margin-top: .5rem;
 	letter-spacing: .8px;
-	color: var(--grisObscuro);;
+	color: var(--grisObscuro);
+	font-family: 'FilsonProBold', sans-serif;
 }
 /* flores */
 	.portada_algodon1{

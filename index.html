@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="./css/intro.css">
 	<link rel="stylesheet" href="./css/kaleidoscope.css">
 	<link rel="stylesheet" href="./css/ciclo.css">
+	<link rel="stylesheet" href="./css/produccion.css">
+	<link rel="stylesheet" href="./css/grafica-produccion.css">
 	
 
 </head>
@@ -215,7 +217,9 @@
 		<div class="intro2" id="intro2">
 			<div class="intro2_planeta">
 				<img class="intro2_planeta_mitad" src="./img/intro/planeta_mitad_1@2x.png" alt="">
-				<img class="intro2_planeta_abajo" src="./img/intro/planeta_bottom@2x.png" alt="">
+				<img class="intro2_planeta_abajo" src="./img/intro/bottom_sa.png" alt="">
+				<div class="oval_azul"></div>
+				<!-- <img class="intro2_planeta_abajo" src="./img/intro/planeta_bottom@2x.png" alt=""> -->
 				<img class="intro2_planeta_gota" src="./img/intro/gota-azul.svg" alt="">
 				<div class="intro2_texto intro2_texto1">
 					<p class="intro2_texto_97 fs-2-5 intro2_texto_grande">97.5%</p>
@@ -482,11 +486,52 @@
 		<div class="ciclo_aux ciclo_aux_nuevavida" id="ciclo_aux_nuevavida">nuevavida</div>
 	</section>
 
-	<section style="height: 100vh;">
-		<h1>seccion de produccion de fibra</h1>
+	<section class="section_produccion">
+		<div class="produccion1">
+			<div class="produccion1_container">
+				<div class="produccion1_texto">
+					<h2 class="produccion1_texto_h2 fs-2">Producción <span>de fibra</span></h2>
+					<p class="produccion1_texto_p fs-09T">El comportamiento ambiental y social de las diferentes materias primas utilizadas en la moda depende de cada tipo de material, cómo surge y qué procesos sigue hasta convertirse en fibra preparada para hilar. Es por eso que generalizamos. </p><br>
+					<p class="produccion1_texto_p fs-09T">Esta etapa te invita a pensar acerca de cómo los niveles de producción de la fibras han aumentaso así como en los diferentes impactos que existen.</p>
+				</div>
+				<div class="produccion-mano">
+					<img class="produccion1_img produccion1_img_mano" src="./img/fibra/mano.png" alt="Mano humana">
+					<img class="produccion1_img produccion1_img_wraist" src="./img/fibra/hilo-wraist.png" alt="Hilo">
+					<img class="produccion1_img produccion1_img_vertical" src="./img/fibra/hilo-vertical.png" alt="Hilo">
+				</div>
+				<img class="produccion1_fondo" src="./img/fibra/hilo-fibra1.png" alt="Hilo">
+			</div>
+		</div>
+		<div class="produccion2">
+			<div class="produccion2_container">
+				<div id="produccion-texto1" class="produccion2_texto">
+					<h3 id="momento" class="produccion2_texto_h3">Ha llegado el momento...</h3>
+					<div class="produccion-p">
+						<p id="produccion-texto2" class="produccion2_texto_p fs-09T">Las fibras se clasifican según su origenes como fibras artificiales, fibras sinteticas y fibras naturales. <br> En esta visualización muestra su producción.</p>
+						<p id="produccion-texto3" class="produccion2_texto_p">Las fibras artificiales han tenido un incremento considerable hasta el 2021 en contraposición con las naturales.</p>
+						<p id="produccion-texto4" class="produccion2_texto_p">Esta demanda de producción es debido a que al diseñar ropa la elección de cada fibra se piensa más en la funcionalidad  y estética. </p>
+					</div>
+				</div>
+				<div class="produccion_grafica">
+					<div id="produccion_container_grafica" class="svg_produccion_container">
+						<div class="produccion_grafica_leyendas">
+							<div class="produccion_leyendas_div artificial ">
+								<div class="produccion-dot"></div>
+								<p class="fs-07">Fibras artificiales</p>
+							</div>
+							<div class="produccion_leyendas_div natural">
+								<div class="produccion-dot"></div>
+								<p class="fs-07">Fibras naturales</p>
+							</div>
+						</div>
+						<p class="toneladas fs-07">en 1.000 toneladas métricas</p>
+						<img src="./img/fibra/aguja.png" alt="" class="aguja aguja_left">
+						<img src="./img/fibra/aguja.png" alt="" class="aguja aguja_right">
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
-
-	
 
 	
 
@@ -502,7 +547,9 @@
 <script src="./js/gsap-intro.js"></script>
 <script src="./js/gsap-ciclo.js"></script>
 <script src="./js/ciclo.js"></script>
+<script src="./js/gsap-produccion.js"></script>
 <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+<script src="./js/grafica-produccion.js"></script>
 
 		
 </body>
