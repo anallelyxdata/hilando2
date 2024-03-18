@@ -14,6 +14,8 @@
 	  --peach: #de7e57;
 	  --gris2: #ccc8c5;
 	  --grisObscuro: #333333;
+	  --amarillo: #f0e221;
+	  --turquesa: #4ba49b;
 	}
 	a{
 		text-decoration: none;
@@ -68,7 +70,9 @@
 	}
 
 /* Font size */
-
+	.fs-07T{
+		font-size: .7rem;
+	}
 	.fs-07{
 		font-size: .7rem;
 	}
@@ -312,7 +316,7 @@
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 	.fs-07{
-		font-size: .85rem;
+		font-size: .8rem;
 	}
 	.fs-08{
 		font-size: 1rem;
@@ -340,6 +344,9 @@
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+	.fs-07T{
+		font-size: .8rem;
+	}
 	.fs-07{
 		font-size: .9rem;
 	}
@@ -408,6 +415,9 @@
 
 /*// X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+	.fs-07T{
+		font-size: .8rem;
+	}
 	.fs-07{
 		font-size: .9rem;
 	}
@@ -439,6 +449,9 @@
 
 /*// XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
+	.fs-07T{
+		font-size: .8rem;
+	}
 	.fs-07{
 		font-size: .9rem;
 	}

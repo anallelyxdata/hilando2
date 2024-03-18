@@ -17,6 +17,7 @@ const svg = d3.select("div#produccion_container_grafica").append("svg")
 .style("margin", margin)
 .classed("svg-content", true);
 
+//  Poner fondo
 svg.append("defs")
 .append("pattern")
 .attr("id", "bg-pattern")
@@ -30,7 +31,7 @@ svg.append("defs")
             .attr("xlink:href", "./img/fibra/textura-grafica.png"); // Replace with the path to your image
 
             svg.append("rect")
-            .attr("width", "83.55%")
+            .attr("width", "81.55%")
             .attr("height", "71.4%")
             .style("opacity", ".39")
             .style("fill", "url(#bg-pattern)");
@@ -59,7 +60,7 @@ const years = [1975, 1980, 1985, 1990, 1995, 2000, 2005, 2007, 2008, 2009, 2010,
     .domain(years)
         .range([0, width]); // Assuming 'width' is defined elsewhere
         const yScale = d3.scaleLinear().rangeRound([height, 0]);
-        yScale.domain([0, 105000]);
+        yScale.domain([0, 110000]);
 
 //-----------------------------AXES-----------------------------//
 const yaxis = d3.axisLeft()
@@ -80,6 +81,20 @@ const ids = function () {
     return "line-"+id++;
 }  
 
+// Add the Y gridlines
+svg.append("g")         
+    .attr("class", "grid")
+    .attr("transform", "translate(-20," + height + ")")
+    .call(d3.axisBottom(xScale)
+        .tickSize(-height) // this will create vertical lines for the grid
+        .tickFormat("") // this hides the tick labels
+    )
+    .selectAll("line")
+    .style("stroke", "#fff") // set the color of the gridlines
+    .style("stroke-width", 1)
+    .style("stroke-dasharray", "8") // this sets the dash pattern, making the lines dotted
+    .style("opacity", 0.5); // set the opacity of the gridlines
+
 //---------------------------TOOLTIP----------------------------//
 const tooltip = d3.select("body").append("div")
 .attr("class", "tooltip")
@@ -91,7 +106,7 @@ const tooltip = d3.select("body").append("div")
 //-----------------------------AXES-----------------------------//
 svg.append("g")
 .attr("class", "axis")
-.attr("transform", "translate(-20," + height + ")")
+.attr("transform", "translate(-17," + height + ")")
 .call(xaxis);
 
 svg.append("g")
@@ -117,17 +132,16 @@ lines.append("path")
 // .attr("d", function(d) { return line([]); })
 
 // Call the callback function after D3.js operation is complete
-executeGSAPAnimation();
 
-lines.selectAll("path")
-.transition()
-  .duration(3000) // Adjust duration as needed
-  .attrTween("d", function(d) {
-    const interpolate = d3.interpolateArray([], line(d.values));
-    return function(t) {
-      return line(d.values.slice(0, Math.floor(t * d.values.length)));
-  };
-});
+// lines.selectAll("path")
+// .transition()
+//   .duration(3000) // Adjust duration as needed
+//   .attrTween("d", function(d) {
+//     const interpolate = d3.interpolateArray([], line(d.values));
+//     return function(t) {
+//       return line(d.values.slice(0, Math.floor(t * d.values.length)));
+//   };
+// });
 
 //---------------------------POINTS-----------------------------// 
 lines.selectAll("points")
@@ -138,7 +152,6 @@ lines.selectAll("points")
 .attr("cy", function(d) { return yScale(d.measurement); })    
 .attr("r", 2.5)
 .attr("class","point")
-.style("opacity", 0)
 .style("stroke", "#fff")
 .style("stroke-width", "1.5")
 .style("fill", "transparent")
@@ -156,8 +169,15 @@ lines.selectAll("points")
 .style("stroke-width", "3")
 .style("fill", "transparent")
 
+lines.selectAll("#line01 .point")
+.style("opacity", 0)
 
-executeGSAPAnimationCircle();
+
+lines.selectAll("#line02 .point")
+.style("opacity", 0)
+
+
+
 
 //---------------------------EVENTS-----------------------------// 
 lines.selectAll("circles")
@@ -250,3 +270,4 @@ lines.selectAll("#line02 .point2")
 
 });
 
+//  chatgtp

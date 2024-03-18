@@ -110,3 +110,27 @@ function disableScroll() {
 function enableScroll() {
     window.onscroll = function () { };
 }
+
+
+//  lines growing
+function initializeLineStates() {
+  const paths = document.querySelectorAll('#line01 path, #line02 path'); // Update with your specific IDs or classes
+
+  paths.forEach(function(path) {
+    // Calculate the length of each path
+    const length = path.getTotalLength();
+
+    // Initialize the line to be "invisible" by matching the stroke-dasharray and stroke-dashoffset
+    path.style.strokeDasharray = length;
+    path.style.strokeDashoffset = length;
+
+    // Remove any existing transition to prevent animation during initialization
+    path.style.transition = 'none';
+  });
+}
+
+window.onload = function() {
+  initializeLineStates();
+  // Any other initialization code can go here
+};
+

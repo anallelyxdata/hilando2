@@ -39,9 +39,9 @@ const intro1 = gsap.timeline({
     duration: totalScrollDuration * 0.1
   });
    intro1.to('.ovalo2', {
-    transform: 'rotate(-6deg)',
-    bottom:'47%',
-    left:'15%',
+    transform: 'rotate(-5deg)',
+    bottom:'56.5%',
+    left:'18%',
     duration: totalScrollDuration * 0.1
   },'<');
   intro1.to('.intro1_planeta_gota', {
@@ -198,8 +198,8 @@ const intro2 = gsap.timeline({
     duration: totalScrollDuration2 * 0.1
   });
   intro2.to('.oval_azul', {
-    top:'80.5%',
-    left:'29%',
+    top:'80.2%',
+    left:'29.8%',
     transform:'rotate(19.5deg)',
     duration: totalScrollDuration2 * 0.1
   },'<');
@@ -232,7 +232,7 @@ const intro2 = gsap.timeline({
       duration: totalScrollDuration2 * 0.1
   },'<');
   intro2.to('.oval_azul', {
-    top:'50.5%',
+    top:'49.5%',
     duration: totalScrollDuration2 * 0.1
   },'<');
   intro2.to('.intro2_texto1', {
@@ -333,7 +333,7 @@ const intro3 = gsap.timeline({
   });
   intro3.to('.intro3_gota3', {
     rotate:'25deg',
-    top:'75%',
+    top:'75.5%',
     left:'31.5%',
     duration: totalScrollDuration3 * 0.1
   },'<');
@@ -357,19 +357,19 @@ const intro3 = gsap.timeline({
   });
   intro3.to('.intro3_gota3', {
     rotate:'0',
-    top:'74.8%',
+    top:'75.5%',
     left:'30%',
     duration: totalScrollDuration3 * 0.1
   });
    intro3.to('.oval_verde', {
     rotate:'-12deg',
-    top:'76.7%',
+    top:'77.2%',
     left:'30%',
     duration: totalScrollDuration3 * 0.1
   },'<');
   intro3.to('.intro3_texto3', {
     visibility:'visible',
-    top:'76.6%',
+    top:'76%',
     left:'-26%',
     duration: totalScrollDuration3 * 0.1
   });
@@ -411,7 +411,7 @@ const intro3 = gsap.timeline({
   },'<');
   intro3.to('.oval_verde', {
     rotate:'-12deg',
-    top:'47%',
+    top:'46.7%',
     left:'30%',
     duration: totalScrollDuration3 * 0.1
   },'<');
@@ -430,6 +430,10 @@ const intro3 = gsap.timeline({
   },'<');
   intro3.to('.intro3_gota3', {
     top:'-25.2%',
+    duration: totalScrollDuration3 * 0.1
+  },'<');
+   intro3.to('.oval_verde', {
+    top:'-26%',
     duration: totalScrollDuration3 * 0.1
   },'<');
   intro3.to('.intro3_texto1', {

@@ -3,7 +3,7 @@
 		z-index: 0;
 	}
 	.section_ciclo{
-		height: 1400vh;
+		height: 1500vh;
 		/*background-color: var(--verde);*/
 		background-image: url('../img/fondos/fondo_verde.png');
 		background-attachment: fixed;
@@ -20,6 +20,36 @@
 		height: 100vh;
 		width: 100%;
 	}
+
+	/* Correcciones */
+		.ciclo_circulo, .rotor_img{
+			opacity: 0;
+		}
+		
+		.ciclo_hidden, .kaleidoscope{
+			opacity: 0;
+		}
+		
+		.ciclo_texto_intro{
+			position: absolute;
+			/*border: solid;*/
+			width: 70%;
+			left: 15%;
+			top: 25%;
+			color: #fff;
+			font-family: 'FilsonProBook', sans-serif;
+			text-align: center;
+		}
+		.ciclo_texto_intro_p{
+			line-height: 1.4;
+			margin-bottom: 1rem;
+		}
+		.ciclo_texto_intro_lima{
+			text-transform: uppercase;
+			color: var(--lima);
+			letter-spacing: 2px;
+		}
+
 	/* texto */
 
 		.ciclo_texto{
@@ -29,6 +59,8 @@
 			width: 70%;
 			/*border: solid;*/
 			left: 15%;
+			/*opacity: 0;*/
+			transform: translate(200%);
 		}
 		.ciclo_texto_p{
 			font-family: 'FilsonProBook', serif;
@@ -67,6 +99,7 @@
 		height: 125%;
 		left: -15%;
 		top: -15%;
+		/*transition: opacity 1s ease;*/
 	}
 
 	.circulo_grande{
@@ -84,7 +117,9 @@
 	}
 
 	.circulo_grande2{
-		transform: rotate(-10deg);
+		/*transform: rotate(-10deg);*/
+		transform: rotate(-143deg);
+		/*transition: all 2s ease;*/
 	}
 	.cls-1{fill:none;stroke:#d4ec6b;stroke-miterlimit:10;stroke-width:3px;stroke-dasharray:8 12;}
 	.cls-2,.cls-3,.cls-4{;fill:#fff;font-family:FilsonProRegular, Filson Pro;font-weight:500;}
@@ -290,25 +325,31 @@
 	.ciclo_aux_ciclo{
 		top: 100vh;
 	}
-	.ciclo_aux_fibra{
+	.ciclo_aux_rotate{
 		top: 250vh;
 	}
-	.ciclo_aux_dis{
+	.ciclo_aux_opacity{
+		top: 350vh;
+	}
+	.ciclo_aux_fibra{
 		top: 400vh;
+	}
+	.ciclo_aux_dis{
+		top: 550vh;
 	}
 
 	.ciclo_aux_manufactura{
-		top: 550vh;
+		top: 650vh;
 	}
 	.ciclo_aux_logistica{
-		top: 700vh;
+		top: 800vh;
 	}
 
 	.ciclo_aux_uso{
-		top: 850vh;
+		top: 950vh;
 	}
 	.ciclo_aux_nuevavida{
-		top: 1000vh;
+		top: 1100vh;
 	}
 
 	.rotor_img{
@@ -363,6 +404,11 @@
 		height: 70vw;
 		margin: 0 auto;
 		/*border: solid yellow;*/
+	}
+	.ciclo_texto_intro{
+		width: 80%;
+		left: 10%;
+		top: 35%;
 	}
 	
 }
@@ -434,6 +480,12 @@
 	.ciclo_texto_btn{
 		width: 100px;
 		padding: 7px 12px;
+	}
+	.ciclo_texto_intro{
+		width: 78%;
+		left: 12%;
+		top: 40%;
+		top: 125%;
 	}
 	
 }

@@ -34,124 +34,124 @@ const produccion1 = gsap.timeline({
     left:'-100%'
   },);
 
-// const produccion2 = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: '.produccion2',  
-//     start: 'top top', 
-//     scrub: 1,    
-//     markers: true, 
-//     pin:'.produccion2_container',
-//     pinSpacing:true,
-//   },
-// });
-// produccion2.to('.produccion2_container', {
-//   opacity:'1',
-// },);
-// produccion2.to('.toneladas', {
-//   transform:'translateY(0)'
-// },);
-// produccion2.to('.produccion2_texto_h3, #produccion-texto2', {
-//   opacity:'0'
-// },'<');
-// produccion2.to('#produccion-texto3', {
-//   opacity:'1', 
-//   left:'0'
-// },);
-// produccion2.to('.artificial', {
-//   opacity:'1'
-// },'<');
-// produccion2.to('#produccion-texto3', {
-//   opacity:'0'
-// },);
-// produccion2.to('#produccion-texto4', {
-//   opacity:'1',
-//   left:'0'
-// },);
-// produccion2.to('.natural', {
-//   opacity:'1'
-// },);
-
-
-const produccion21 = gsap.timeline({
+const produccion2 = gsap.timeline({
   scrollTrigger: {
-    trigger: '.aux_fibra1_2',  
-    start: 'top bottom',
-    end: 'top center', 
+    trigger: '.produccion2',  
+    start: 'top top', 
     scrub: 1,    
-    markers: false, 
+    markers: true, 
+    pin:'.produccion2_container',
+    pinSpacing:true,
   },
 });
-produccion21.to('.produccion2_texto', {
+produccion2.to('.produccion2_texto', {
   left:'0'
 },);
-
-
-const produccionArtT = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.aux_fibra2Texto',  
-    start: 'top bottom', 
-    end:'top top',
-    scrub: 1,    
-    markers: false, 
-  },
-});
-// Produccion Artificial Texto
-  produccionArtT.to('.toneladas', {
-    transform:'translateY(0)'
-  },);
-  produccionArtT.to('.produccion2_texto_h3, #produccion-texto2', {
-    opacity:'0'
-  },);
-  produccionArtT.to('#produccion-texto3', {
-    opacity:'1', 
-    left:'0'
-  },);
-
-const produccionArt = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.aux_fibra2',  
-    start: 'top center', 
-    end:'top center',
-    scrub: 1,    
-    markers: false, 
-  },
-});
-produccionArt.to('.artificial', {
+produccion2.to('.toneladas', {
+  transform:'translateY(0)'
+},);
+produccion2.to('.produccion2_texto_h3, #produccion-texto2', {
+  opacity:'0'
+},'<');
+produccion2.to('#produccion-texto3', {
+  opacity:'1', 
+  left:'0'
+},);
+produccion2.to('.artificial', {
+  opacity:'1'
+},'<');
+produccion2.to('#produccion-texto3', {
+  opacity:'0'
+},);
+produccion2.to('#produccion-texto4', {
+  opacity:'1',
+  left:'0'
+},);
+produccion2.to('.natural', {
   opacity:'1'
 },);
 
-const produccionNatT = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.aux_fibra3Texto',  
-    start: 'top bottom', 
-    end:'top top',
-    scrub: 1,    
-    markers: false, 
-  },
-});
-// Produccion Natural Texto
-  produccionNatT.to('#produccion-texto3', {
-    opacity:'0'
-  },);
-  produccionNatT.to('#produccion-texto4', {
-    opacity:'1',
-    left:'0'
-  },);
+
+// const produccion21 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.aux_fibra1_2',  
+//     start: 'top bottom',
+//     end: 'top center', 
+//     scrub: 1,    
+//     markers: false, 
+//   },
+// });
+// produccion21.to('.produccion2_texto', {
+//   left:'0'
+// },);
+
+
+// const produccionArtT = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.aux_fibra2Texto',  
+//     start: 'top bottom', 
+//     end:'top top',
+//     scrub: 1,    
+//     markers: false, 
+//   },
+// });
+// // Produccion Artificial Texto
+//   produccionArtT.to('.toneladas', {
+//     transform:'translateY(0)'
+//   },);
+//   produccionArtT.to('.produccion2_texto_h3, #produccion-texto2', {
+//     opacity:'0'
+//   },);
+//   produccionArtT.to('#produccion-texto3', {
+//     opacity:'1', 
+//     left:'0'
+//   },);
+
+// const produccionArt = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.aux_fibra2',  
+//     start: 'top center', 
+//     end:'top center',
+//     scrub: 1,    
+//     markers: false, 
+//   },
+// });
+// produccionArt.to('.artificial', {
+//   opacity:'1'
+// },);
+
+// const produccionNatT = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.aux_fibra3Texto',  
+//     start: 'top bottom', 
+//     end:'top top',
+//     scrub: 1,    
+//     markers: false, 
+//   },
+// });
+// // Produccion Natural Texto
+//   produccionNatT.to('#produccion-texto3', {
+//     opacity:'0'
+//   },);
+//   produccionNatT.to('#produccion-texto4', {
+//     opacity:'1',
+//     left:'0'
+//   },);
 
 
 
-const produccionNat = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.aux_fibra3',  
-    start: 'top center',
-    end:'top center',
-    scrub: 1,    
-    markers: false, 
-  },
-});
-produccionNat.to('.natural', {
-  opacity:'1'
-},);
+// const produccionNat = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.aux_fibra3',  
+//     start: 'top center',
+//     end:'top center',
+//     scrub: 1,    
+//     markers: false, 
+//   },
+// });
+// produccionNat.to('.natural', {
+//   opacity:'1'
+// },);
 
 // const produccion3 = gsap.timeline({
 //   scrollTrigger: {
@@ -322,15 +322,15 @@ produccionNat.to('.natural', {
 //   opacity:'1', 
 // },);
 
-// const produccion3 = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: '.produccion4',  
-//     start: 'top bottom',  
-//     scrub: 1,    
-//     markers: false, 
-//     pinSpacing:true
-//   },
-// });
-// produccion3.to('.produccion2_container', {
-//   top:'-50%'
-// },);
+const produccion3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.produccion4',  
+    start: 'top bottom',  
+    scrub: 1,    
+    markers: false, 
+    pinSpacing:true
+  },
+});
+produccion3.to('.produccion2_container', {
+  top:'-50%'
+},);

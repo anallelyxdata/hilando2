@@ -78,22 +78,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const section_ciclo = document.querySelector('.section_ciclo');
 
     if(isElementVisible(ciclo_aux_ciclo)){
-        document.querySelector('.ciclo_texto_titulo').style.display = 'none';
-        document.querySelector('.ciclo_texto_btn').style.display = 'none';
-        document.querySelector('.ciclo_lima_abajo').style.display = 'block';
-        document.querySelector('.ciclo_texto_p').innerText = 'Para realmente comprender el impacto ambiental y social que tiene cada prenda, hemos analizado cada etapa de su ciclo de vida.';
+        // document.querySelector('.ciclo_texto_titulo').style.display = 'none';
+        // document.querySelector('.ciclo_texto_btn').style.display = 'none';
+        // document.querySelector('.ciclo_lima_abajo').style.display = 'block';
+        // document.querySelector('.ciclo_texto_p').innerText = 'Para realmente comprender el impacto ambiental y social que tiene cada prenda, hemos analizado cada etapa de su ciclo de vida.';
 
-        document.querySelectorAll('.g_etapa text').forEach((element) => {
-            element.style.opacity = '.43';
-            element.style.fontFamily='FilsonProRegular'
-        });
+        // document.querySelectorAll('.g_etapa text').forEach((element) => {
+        //     element.style.opacity = '.43';
+        //     element.style.fontFamily='FilsonProRegular'
+        // });
 
-        document.querySelector('.btn-main img').style.filter = 'invert(0%)';
-        document.querySelector('.portada_btn-xdata img').style.filter = 'invert(0%)';
-        document.querySelector('.btn-main').style.color = '#fff';
+        // document.querySelector('.btn-main img').style.filter = 'invert(0%)';
+        // document.querySelector('.portada_btn-xdata img').style.filter = 'invert(0%)';
+        // document.querySelector('.btn-main').style.color = '#fff';
+        document.querySelector('.ciclo_texto').style.opacity = '0';
 
     }
     else if (isElementVisible(ciclo_aux_fibra)) {
+        document.querySelector('.ciclo_texto').style.opacity = '1';
+
         section_ciclo.style.backgroundImage = 'url(./img/fondos/fondo_verde.png)';
         document.querySelectorAll('.g_etapa text').forEach((element) => {
             element.style.opacity = '.43';
