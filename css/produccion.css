@@ -732,6 +732,7 @@
 		justify-content: center;
 		align-items: center;
 		position: relative;
+		overflow: hidden;
 	}
 	.produccion4_texto{
 		width: 95%;
@@ -740,6 +741,8 @@
 		font-family: 'FilsonProBook', sans-serif;
 		line-height: 1.4;
 		padding-bottom: 10%;
+		position: relative;
+		top: 70%;
 	}
 	.produccion4_texto2{
 		margin-top: 2rem;
@@ -751,39 +754,50 @@
 		bottom: 0;
 		width: 100%;
 		transform: translateY(15%);
+		z-index: 10;
 	}
 	.produccion4_flor1{
-		top: -15%;
+		top: -9%;
 		left: 15%;
-		transform: rotate(55deg);
-		width: 22%;
+		width: 20%;
+		animation: flowerLeave 4s ease-in-out infinite;
 	}
 	.produccion4_flor2{
 		top: 40%;
-		left: -4%;
+		left: -5%;
 		width: 14%;
+		animation: float1 5s ease-in-out infinite;
 	}
 	.produccion4_flor3{
-		top: 15%;
-		left: -4.3%;
-		width: 13%;
+		top: 8%;
+		left: -6%;
+		width: 15%;
 		transform: rotate(-65deg);
+		animation: flowerOut 3s ease-in-out infinite;
 	}
 	.produccion4_flor4{
 		top: -8%;
 		left: 72%;
 		width: 14%;
+		animation: float1 6s ease-in-out infinite;
 	}
 	.produccion4_flor5{
 		top: 24%;
-		right: -6%;
+		right: -8%;
 		width: 20%;
+		animation: tiltImage 3s ease-in-out infinite;
 	}
 	.produccion4_flor6{
 		top: 56%;
 		left: 80%;
 		width: 6%;
+		animation: flowerOut 5s ease-in-out infinite;
 	}
+
+.section_diseno{
+	height: 100vh;
+	background-color: orange;
+}
 
 
 /* MQ */

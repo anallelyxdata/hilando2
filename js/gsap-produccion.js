@@ -493,6 +493,18 @@ produccionHilos11.to('#oval31', {
   opacity:'1'
 },);
 
+const produccionHilosFlores = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.produccion4',  
+    start: 'top top',
+    scrub: 1,   
+    pin:true, 
+    markers: false, 
+  },
+});
+produccionHilosFlores.to('.produccion4_texto', {
+  top:0
+},);
 
 // produccionHilos6.to('.oval108', {
 //   background:'linear-gradient(-135deg, var(--amarillo) 60%, white 60%, white 63%, transparent 61%)'
