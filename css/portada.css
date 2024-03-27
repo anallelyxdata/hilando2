@@ -11,7 +11,7 @@
 }
 .portada_lima{
 	background-image: url('../img/fondos/fondo_lima.png');
-	background-size: cover;
+	background-size: 100%;
 	height: 90%;
 	position: relative;
 }

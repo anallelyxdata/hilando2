@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sectionCiclo = document.querySelector('.section_ciclo');
 
     // Produccion de Fibra
-    document.getElementById("g_produccion").addEventListener("click", function() {
+    document.getElementById("g_produccion").addEventListener("mouseover", function() {
 
         document.getElementById('ciclo_aux_fibra').scrollIntoView({ behavior: 'smooth' });
         sectionCiclo.style.backgroundImage = 'url(./img/fondos/fondo_verde.png)';

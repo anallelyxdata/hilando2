@@ -281,8 +281,8 @@ const produccionHilos1 = gsap.timeline({
     markers: false, 
   },
 });
-produccionHilos1.to('.hilar_izq', {
-  left:'0%'
+produccionHilos1.to('.hilar_der', {
+  right:'0%'
 },);
 produccionHilos1.to('.fondo_hilos', {
   transform:'translateX(6.5%) translateY(2%)'

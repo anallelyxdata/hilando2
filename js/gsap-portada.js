@@ -4,7 +4,7 @@ gsap.registerPlugin(ScrollTrigger);
 const portada = gsap.timeline({
   scrollTrigger: {
     trigger: '.portada_pregunta',  
-    start: 'top center',  
+    start: 'top 40%',  
     end: 'bottom top',      
     scrub: 1,    
     markers: false, 
@@ -90,12 +90,16 @@ portada.to('.portada_escondida_pulsera2', {
   rotate:80,
 },'<');
 
+portada.to('.portada_pregunta_sticky', {
+  opacity:1, 
+  duration:.08
+}, );
 
 portada.to('.portada_escondida_tenis1', {
   y:2500,
   x:-280,
   rotate:210,
-});
+}, );
 portada.to('.portada_escondida_chamarra1', {
   y:2500,
   x:-150,
