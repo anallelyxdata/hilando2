@@ -8,7 +8,7 @@ const disAux1 = gsap.timeline({
     start: 'top center',
     end:'top 15%',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 disAux1.fromTo('#animatedPath1', { strokeDashoffset: 3000}, { strokeDashoffset: 0});
@@ -19,7 +19,7 @@ const disAux12 = gsap.timeline({
     start: 'top center',
     end:'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 disAux12.fromTo('#animatedPath12', { strokeDashoffset: 3000}, { strokeDashoffset: 0});
@@ -30,7 +30,7 @@ const disAux2 = gsap.timeline({
     start: 'top center',
     end:'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 disAux2.fromTo('#animatedPath2', { strokeDashoffset: 3000}, { strokeDashoffset: 0});
@@ -41,7 +41,7 @@ const disAux3 = gsap.timeline({
     start: 'top center',
     end:'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 disAux3.fromTo('#animatedPath3', { strokeDashoffset: 3000}, { strokeDashoffset: 0});
@@ -53,7 +53,7 @@ const disAux32 = gsap.timeline({
     start: 'top center',
     end:'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 disAux32.fromTo('#animatedPath32', { strokeDashoffset: 3000}, { strokeDashoffset: 0});
@@ -64,7 +64,7 @@ const disAux4 = gsap.timeline({
     start: 'top center',
     end:'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 disAux4.fromTo('#animatedPath4', { strokeDashoffset: 3000}, { strokeDashoffset: 0});
@@ -75,7 +75,7 @@ const disAux42 = gsap.timeline({
     start: 'top center',
     end:'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 disAux42.fromTo('#animatedPath42', { strokeDashoffset: -3000}, { strokeDashoffset: 0});
@@ -86,7 +86,7 @@ const disAux5 = gsap.timeline({
     start: 'top center',
     end:'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 disAux5.fromTo('#animatedPath5', { strokeDashoffset: 3000}, { strokeDashoffset: 0});
